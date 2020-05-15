@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Kristina Veremei](https://up.htmlacademy.ru/htmlcss/28/user/1355293).
-* Наставник: `Сергей Остаповец`.
+* Наставник: [Сергей Остаповец](https://up.htmlacademy.ru/htmlcss/28/user/288419).
 
 ---
 
