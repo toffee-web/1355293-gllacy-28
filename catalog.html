@@ -23,7 +23,7 @@
     <main>
         <section>
             <p>с 10 до 20, ежедневно</p>
-            <a href="tel:8812450-25-25">8 812 450-25-25</a>
+            <a href="tel:88124502525">88124502525</a>
             <!--Хлебные крошки-->
             <ul>
                 <li><a href="index.html">Главная</a></li>
@@ -31,69 +31,131 @@
                 <li><a href="#">Сливочное</a></li>
             </ul>
             <h1>Сливочное мороженое</h1>
-            <!--Здесь будет фильтр-->
-            <button type="submit">Применить</button>
-        </section>
+            <!--Форма фильтра-->
+            <form action="https://echo.htmlacademy.ru" method="POST">
+                <p>
+                    <label for="sorting">Сортировка:</label>
+                    <p>
+                    <select name="sorting" id="sorting">
+                        <option value="по популярности" selected>по популярности</option>
+                        <option value="сначала недорогие">сначала недорогие</option>
+                        <option value="сначала дорогие">сначала дорогие</option>
+                        <option value="по жирности">по жирности</option>
+                    </select>
+                    </p>
+                    <label for="price">Цена: 100Р - 500Р</label>
+                    <p><input type="range" id="price" min="100" max="500"></p>
+                    
+                    <fieldset>
+                        <legend>Жирность:</legend>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="zero" id="fat-zero" value="0%">
+                                    <label for="fat-zero">0%</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="ten" id="fat-ten" value="до 10%" checked>
+                                    <label for="fat-sugar">до 10%</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="fruits" id="fat-fruits" value="до 30%">
+                                    <label for="fat-fruits">до 30%</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="syrup" id="fat-syrup" value="выше 30%">
+                                    <label for="fat-syrup">выше 30%</label>
+                                </li>
+                            </ul>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Наполнители:</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="chocolate" id="fillers-chocolate" checked>
+                                <label for="fillers-chocolate">шоколадные</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="sugar" id="fillers-sugar" checked>
+                                <label for="fillers-sugar">сахарные присыпки</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="fruits" id="fillers-fruits">
+                                <label for="fillers-fruits">фрукты</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="syrup" id="fillers-syrup">
+                                <label for="fillers-syrup">сиропы</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="jam" id="fillers-jam">
+                                <label for="fillers-jam">джемы</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </p>
+                <button type="submit">Применить</button>
+            </form>
         <section>
             <ul>
                 <li>
-                    <img src="https://via.placeholder.com/267x267" alt="Сливочное" width="267" height="267">
+                    <img src="img/hit1.png" alt="Сливочное" width="267" height="267">
                     <p>310 P<span>/кг</span></p>
                     <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
                 </li>
                 <li>
-                    <img src="https://via.placeholder.com/267x267" alt="Сливочно-кофейное" width="267" height="267">
+                    <img src="img/hit2.png" alt="Сливочно-кофейное" width="267" height="267">
                     <p>380 P<span>/кг</span></p>
                     <p>Сливочно-кофейное с кусочками шоколада</p>
                 </li>
                 <li>
-                    <img src="https://via.placeholder.com/267x267" alt="Сливочно-клубничное" width="267" height="267">
+                    <img src="img/hit3.png" alt="Сливочно-клубничное" width="267" height="267">
                     <p>355 P<span>/кг</span></p>
                     <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
                 </li>
                 <li>
-                    <img src="https://via.placeholder.com/267x267" alt="Сливочное крем-брюле" width="267" height="267">
+                    <img src="img/hit4.png" alt="Сливочное крем-брюле" width="267" height="267">
                     <p>415 P<span>/кг</span></p>
                     <p>Сливочное крем-брюле с карамельной подливкой</p>
                 </li>
                 <li>
-                    <img src="https://via.placeholder.com/267x267" alt="Сливочное" width="267" height="267">
+                    <img src="img/product5.png" alt="Сливочное" width="267" height="267">
                     <p>325 P<span>/кг</span></p>
                     <p>Сливочное с брусничеым джемом</p>
                 </li>
                 <li>
-                    <img src="https://via.placeholder.com/267x267" alt="Сливочно-кофейное" width="267" height="267">
+                    <img src="img/product6.png" alt="Сливочно-кофейное" width="267" height="267">
                     <p>410 P<span>/кг</span></p>
                     <p>Сливочно-черничное с цельными ягодами черники</p>
                 </li>
                 <li>
-                    <img src="https://via.placeholder.com/267x267" alt="Сливочно-клубничное" width="267" height="267">
+                    <img src="img/product7.png" alt="Сливочно-клубничное" width="267" height="267">
                     <p>315 P<span>/кг</span></p>
                     <p>Сливочно-лимонное с карамельной присыпкой</p>
                 </li>
                 <li>
-                    <img src="https://via.placeholder.com/267x267" alt="Сливочное крем-брюле" width="267" height="267">
+                    <img src="img/product8.png" alt="Сливочное крем-брюле" width="267" height="267">
                     <p>320 P<span>/кг</span></p>
                     <p>Сливочное с шоколадной стружкой</p>
                 </li>
                 <li>
-                    <img src="https://via.placeholder.com/267x267" alt="Сливочное" width="267" height="267">
+                    <img src="img/product9.png" alt="Сливочное" width="267" height="267">
                     <p>440 P<span>/кг</span></p>
                     <p>Сливочно-ванильное с кусочами шоколада</p>
                 </li>
                 <li>
-                    <img src="https://via.placeholder.com/267x267" alt="Сливочно-кофейное" width="267" height="267">
+                    <img src="img/product10.png" alt="Сливочно-кофейное" width="267" height="267">
                     <p>435 P<span>/кг</span></p>
                     <p>Сливочное с ментоловым сиропом</p>
                 </li>
                 <li>
-                    <img src="https://via.placeholder.com/267x267" alt="Сливочно-клубничное" width="267" height="267">
-                    <p>315 P<span>/кг</span></p>
+                    <img src="img/product11.png" alt="Сливочно-клубничное" width="267" height="267">
+                    <p>355 P<span>/кг</span></p>
                     <p>Сливочно с кусочками черного шоколада</p>
                 </li>
                 <li>
-                    <img src="https://via.placeholder.com/267x267" alt="Сливочное крем-брюле" width="267" height="267">
-                    <p>320 P<span>/кг</span></p>
+                    <img src="img/product12.png" alt="Сливочное крем-брюле" width="267" height="267">
+                    <p>420 P<span>/кг</span></p>
                     <p>Сливочное с мятным сиропом</p>
                 </li>
             </ul>
@@ -166,8 +228,35 @@
     </section>
 
     <section>
-        <!-- Здесь будет форма входа -->
-        <a href="#">Войти</a>
+    <!--Форма поиска-->
+        <!--form action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+                <label for="search" class="visually-hidden">Введите наименование</label>
+                <input id="search" type="text" name="search" placeholder="Крем-брюле">
+            </p>
+        </form-->
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+                <label for="search_site" class="visually-hidden">Введите наименование</label>
+                <input type="search" id="search_site" placeholder="Крем-брюле">
+            </p>
+        </form>
+    </section>
+
+    <section>
+        <!--Форма входа-->
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+              <label for="login-login" class="visually-hidden">Введите логин</label>
+              <input id="login-login" type="email" name="login" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="login-password" class="visually-hidden">Введите пароль</label>
+              <input id="login-password" type="password" name="password" placeholder="******">
+            </p>
+            <button type="submit">Войти</button>
+        </form>
+        <button type="button">Закрыть</button>
         <a href="#">Забыли пароль?</a>
         <a href="#">Новая регистрация</a>
     </section>
