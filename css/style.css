@@ -260,7 +260,6 @@ a{
     font-size: 14px;
     line-height: 16px;
 }
-
 .main-slaider-info a{
     font-size: 22px;
     line-height: 24px;
@@ -482,7 +481,6 @@ article a{
     background: var(--basic-focusbutton);
     box-shadow: 0px 2px 2px #AC1000;
 }
-
 .button:active{
     background: var(--basic-activebutton);
     box-shadow: inset 0px 2px 2px #942718;
