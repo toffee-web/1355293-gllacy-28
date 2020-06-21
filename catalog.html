@@ -23,7 +23,7 @@
         </ul>
     </header>
     <main class="main">
-        <section>
+        <section class="main-catalog">
             <div class="main-nav">
                 <div class="main-slaider-info">
                     <p>с 10 до 20, ежедневно</p>
@@ -32,15 +32,18 @@
             <!--Хлебные крошки-->
                 <ul class="breadcrumbs">
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">Сливочное</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li class="breadcrumbs-current"><a href="#">Сливочное</a></li>
                 </ul>
             </div>
             <h1>Сливочное мороженое</h1>
             <!--Форма фильтра-->
-            <form action="https://echo.htmlacademy.ru" method="GET">
-                <p>
-                    <label for="sorting">Сортировка:</label>
+            <section>
+            <form class="soting" action="https://echo.htmlacademy.ru" method="GET">
+                <div class="forom-sorting-all">
+                    <p class="form-legend">
+                        <label for="sorting">Сортировка:</label>
+                    </p>
                     <p>
                         <select class="form-sorting" name="sorting" id="sorting">
                             <option value="по популярности" selected>по популярности</option>
@@ -49,36 +52,44 @@
                             <option value="по жирности">по жирности</option>
                         </select>
                     </p>
-                    <label for="price">Цена: 100Р - 500Р</label>
-                    <p>
-                        <input type="range" id="price" min="100" max="500">
-                    </p>
-                    
-                    <fieldset>
-                        <legend>Жирность:</legend>
-                            <ul>
-                                <li>
+                </div>
+                    <fieldset class="filter-item">
+                        <legend class="form-legend">Цена: 100Р - 500Р</legend>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                  <div class="bar"></div>
+                                  <div class="toggle toggle-min"></div>
+                                  <div class="toggle toggle-max"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>                    
+                    <fieldset class="form-radio">
+                        <legend class="form-legend">Жирность:</legend>
+                            <ul class="form-radio-list">
+                                <li class="form-radio-list-item">
                                     <input type="radio" name="zero" id="fat-zero" value="0%">
                                     <label for="fat-zero">0%</label>
                                 </li>
-                                <li>
+                                <li class="form-radio-list-item">
                                     <input type="radio" name="ten" id="fat-ten" value="до 10%" checked>
                                     <label for="fat-sugar">до 10%</label>
                                 </li>
-                                <li>
+                                <li class="form-radio-list-item">
                                     <input type="radio" name="fruits" id="fat-fruits" value="до 30%">
                                     <label for="fat-fruits">до 30%</label>
                                 </li>
-                                <li>
+                                <li class="form-radio-list-item">
                                     <input type="radio" name="syrup" id="fat-syrup" value="выше 30%">
                                     <label for="fat-syrup">выше 30%</label>
                                 </li>
                             </ul>
                     </fieldset>
 
-                    <fieldset>
-                        <legend>Наполнители:</legend>
-                        <ul>
+                    <fieldset class="form-checkbox">
+                        <legend class="form-legend">Наполнители:</legend>
+                        <ul class="form-checkbox-list">
                             <li>
                                 <input type="checkbox" name="chocolate" id="fillers-chocolate" checked>
                                 <label for="fillers-chocolate">шоколадные</label>
@@ -101,9 +112,9 @@
                             </li>
                         </ul>
                     </fieldset>
-                </p>
-                <button class="button-apply" type="submit">Применить</button>
-            </form>
+                </form>
+            <button class="button-apply" type="submit">Применить</button>
+            </section>
         <section class="catalog">
             <ul class="catalog-hit">
                 <li>
@@ -169,16 +180,18 @@
             </ul>
         </section>
         <div>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>&gt;</li>
+            <ul class="pagination-list">
+                <li class="pagination-item"><a href="#">&lang;</a></li>
+                <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">4</a></li>
+                <li class="pagination-item"><a href="#">5</a></li>
+                <li class="pagination-item"><a href="#">&rang;</a></li>
             </ul>
         </div>        
     </main>
+    <hr>
     <footer class="footer">
         <section class="footer-icon">
             <ul class="footer-icon-list">
@@ -199,14 +212,13 @@
         <section class="footer-about">
             <ul class="footer-about-list">
                 <li class="footer-about-list-item">
-                  <img src="img/heart.svg" alt="Сердечко" width="15" height="13"> 
                   <a href="#">Для поставщиков</a>          
                 </li>
                 <li>
-                  <a href="#">О производстве</a>
+                    <a href="#">Наши документы</a>
                 </li>
                 <li>
-                  <a href="#">Наши документы</a>
+                  <a href="#">О производстве</a>
                 </li>
                 <li>
                   <a href="#">Экологические стандарты</a>
@@ -226,7 +238,7 @@
 
     <section>
         <!--Список при наведении на кнопку Каталог-->
-        <ul>
+        <ul class="catalog-list">
             <li><a href="#">Новинки</a></li>
             <li><a href="#">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
