@@ -7,20 +7,35 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="container">
-    <div class="site-wrapper site-wrapper-3">
+    <div class="site-wrapper site-wrapper-1">
       <div class="slider-container">
         <header class="header-navigation">
           <div class="logo">
             <a href="#"><img src="img/logo.png" alt="Логотип" width="154" height="64"></a>
           </div>
           <ul class="site-navigation">
-            <li><a href="#">Каталог</a></li>
+            <li><a href="catalog.html">Каталог</a>
+              <ul class="submenu">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
           </ul>
           <ul class="user-navigation">
             <li><a href="#"><img  class="user-navigation-search" src="img/search.svg" alt="Поиск"></a></li>
-            <li><a href="#"><img src="img/input.svg" alt="Вход">Вход</a></li>
+            <li><embed src="img/basket.svg"></li>
+            <!--li><a class="user-navigation-input" href="#">
+                <div class="user-navigation-input-img"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z">
+                </path></svg></div>
+                <div class="user-navigation-input-txt"><p>Вход</p></div>
+            </a></!--li>
+            <li class="user-navigation-input"><object type="image/svg+xml" data="img/input.svg" class="user-navigation-input"></object><a href="#"><!--img src="img/input.svg" alt="Вход">Вход</a></li-->
             <li><a href="#"><img src="img/basket.svg" alt="Корзина">Пусто</a></li>
           </ul>
         </header>
@@ -71,15 +86,16 @@
           <li>
             <p>
               <img class="catalog-hit-img" src="img/hit.png" alt="Хит" width="61" height="61">
-              <img class=".catalog-hit-item" src="img/hit1.png" alt="Сливочное" width="267" height="267">
+              <img class="catalog-hit-item" src="img/hit1.png" alt="Сливочное" width="267" height="267">
             </p>
-            <p class="price">310 P<span>/кг</span></p>
+            <p class="price">310 &#8381;<span>/кг</span></p>
             <p class="title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a href="#" class="button-view button">Быстрый просмотр</a>
           </li>
           <li>
             <p>
               <img class="catalog-hit-img" src="img/hit.png" alt="Хит" width="61" height="61">
-              <img class=".catalog-hit-item" src="img/hit2.png" alt="Сливочно-кофейное" width="267" height="267">
+              <img class="catalog-hit-item" src="img/hit2.png" alt="Сливочно-кофейное" width="267" height="267">
             </p>
             <p class="price">380 P<span>/кг</span></p>
             <p class="title">Сливочно-кофейное с кусочками шоколада</p>
@@ -87,7 +103,7 @@
           <li>
             <p>
               <img class="catalog-hit-img" src="img/hit.png" alt="Хит" width="61" height="61">
-              <img class=".catalog-hit-item" src="img/hit3.png" alt="Сливочно-клубничное" width="267" height="267">
+              <img class="catalog-hit-item" src="img/hit3.png" alt="Сливочно-клубничное" width="267" height="267">
             </p>
             <p class="price">355 P<span>/кг</span></p>
             <p class="title">Сливочно-клубничное с присыпкой из белого шоколада</p>
@@ -95,7 +111,7 @@
           <li>
             <p>
               <img class="catalog-hit-img" src="img/hit.png" alt="Хит" width="61" height="61">
-              <img class=".catalog-hit-item" src="img/hit4.png" alt="Сливочное крем-брюле" width="267" height="267">
+              <img class="catalog-hit-item" src="img/hit4.png" alt="Сливочное крем-брюле" width="267" height="267">
             </p>
             <p class="price">415 P<span>/кг</span></p>
             <p class="title">Сливочное крем-брюле с карамельной подливкой</p>
@@ -133,14 +149,14 @@
         <form action="https://echo.htmlacademy.ru" method="POST">
           <p>
             <label for="subscription" class="visually-hidden">Введите ваш email</label>
-            <input class="form-input" type="email" id="subscription" placeholder="email@example.com">
+            <input class="form-input modal-iteraction" type="email" id="subscription" placeholder="email@example.com">
             <button class="btn button" type="submit">Отправить</button>
           </p>
         </form>
       </section>
     </div>
       <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3032094948753!2d30.321738480694716!3d59.938672815224635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1592342216745!5m2!1sru!2sby" width="1200" height="430" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3032094948753!2d30.321738480694716!3d59.938672815224635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1592342216745!5m2!1sru!2sby" width="1200" height="430" frameborder="0" style="border:0;" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" aria-hidden="false" tabindex="0"></iframe>
         <div>
             <p class="map-text text-info">Адрес главного офиса и оффлайн-магазина:</p> 
             <p class="map-address">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
@@ -154,16 +170,16 @@
     <footer class="footer">
       <section class="footer-icon">
         <ul class="footer-icon-list">
-          <li>
+          <li class="footer-icon-list-item">
             <a href="#"><img src="img/facebook.svg"></a>
           </li>
-          <li>
+          <li class="footer-icon-list-item">
             <a href="#"><img src="img/vk.svg"></a>
           </li>
-          <li>
+          <li class="footer-icon-list-item">
             <a href="#"><img src="img/inst.svg"></a>
           </li>
-          <li>
+          <li class="footer-icon-list-item">
             <a href="#"><img src="img/twitter.svg"></a>
           </li>
         </ul>
@@ -171,77 +187,66 @@
       <section class="footer-about"> 
         <ul class="footer-about-list">
           <li class="footer-about-list-item"> 
-            <a href="#">Для поставщиков</a>         
+            <a href="#" class="links-hover-click">Для поставщиков</a>         
           </li>
           <li>
-            <a href="#">Наши документы</a>
+            <a href="#" class="links-hover-click">Наши документы</a>
           </li>
           <li>
-            <a href="#">О производстве</a>
+            <a href="#" class="links-hover-click">О производстве</a>
           </li>
           <li>
-            <a href="#">Экологические стандарты</a>
+            <a href="#" class="links-hover-click">Экологические стандарты</a>
           </li>
         </ul>
       </section>
       <section class="developer">
-        <img src="img/logo-acad.svg" alt="Html Academy" width="108" height="39">  
-        <p>Сделано в <a href="#">HTML Academy</a> &copy; 2019</p>
+        <a class="html-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-acad.svg" alt="Html Academy" width="108" height="39"></a>  
+        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="links-hover-click">HTML Academy</a> &copy; 2019</p>
       </section>
     </footer>
 
-    <section class="visually-hidden">
-      <!--Список при наведении на кнопку Каталог-->
-      <ul>
-        <li><a href="#">Новинки</a></li>
-        <li><a href="#">Сливочное</a></li>
-        <li><a href="#">Щербеты</a></li>
-        <li><a href="#">Фруктовый лед</a></li>
-        <li><a href="#">Мелорин</a></li>
-      </ul>
-    </section>
-
     <!--Форма обратной связи -->
-    <section class="form-feedback">
+    <section class="form-feedback modal">
       <h2>Мы обязательно вам ответим!</h2>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <p>
           <label for="feedback-name" class="visually-hidden">Имя Фамилия</label>
-          <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия" required> 
+          <input class="modal-iteraction" id="feedback-name" type="text" name="name" placeholder="Имя Фамилия" required> 
         </p>
         <p>
           <label for="feedback-email" class="visually-hidden">Введите ваш email</label>
-          <input id="feedback-email" type="email" name="email" placeholder="email@example.com" required>
+          <input class="modal-iteraction" id="feedback-email" type="email" name="email" placeholder="email@example.com" required>
         </p>
         <p>
           <label for="feedback-text" class="visually-hidden">Введите текст в свободной форме</label>
-          <textarea name="message" id="feedback-text" cols="30" rows="7" placeholder="В свободной форме"></textarea>
+          <textarea class="modal-iteraction" name="message" id="feedback-text" cols="30" rows="6" placeholder="В свободной форме"></textarea>
         </p>
         <button class="btn button" type="submit">Отправить</button>
       </form>
-      <button class="button-close" type="button"><img src="img/close.png" alt="Закрыть"></button>
+      <button class="button-close modal-close" type="button" aria-label="Закрыть"><!--img src="img/close.png" alt="Закрыть"--></button>
     </section>
 
      <!--Форма поиска-->
-    <section class="form-search">
+    <section class="form-search modal">
       <form action="https://echo.htmlacademy.ru" method="POST">
         <p>
           <label for="search_site" class="visually-hidden">Введите наименование</label>
-          <input class="form-search-input" type="search" id="search_site" placeholder="Крем-брюле">
+          <input class="modal-iteraction form-search-input" type="search" id="search_site" placeholder="Крем-брюле">
         </p>
       </form>
     </section>
 
     <!--Форма входа-->
-    <section class="modal">
+    <section class="modal modal-login">
       <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
         <p>
           <label for="login-login" class="visually-hidden">Введите логин</label>
-          <input id="login-login" type="email" name="login" placeholder="email@example.com">
+          <input class="modal-iteraction" id="login-login" type="email" name="login" placeholder="email@example.com">
         </p>
         <p>
           <label for="login-password" class="visually-hidden">Введите пароль</label>
-          <input id="login-password" type="password" name="password" placeholder="******">
+          <input class="modal-iteraction" id="login-password" type="password" name="password" placeholder="******">
         </p>
         <button class="modal-button button button-input" type="submit">Войти</button>
       <a class="restore" href="#">Забыли пароль?</a>

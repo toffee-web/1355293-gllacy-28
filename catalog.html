@@ -17,9 +17,9 @@
             <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-            <li><a href="#"><img src="img/search.svg" alt="Поиск" width="16" height="16"></a></li>
-            <li><a href="#"><img src="img/input.svg" alt="Вход" width="20" height="19">Вход</a></li>
-            <li><a href="#"><img src="img/basket.svg" alt="Корзина" width="21" height="20">Пусто</a></li>
+            <li><a href="#"><img class="user-navigation-search" src="img/search.svg" alt="Поиск" ></a></li>
+            <li><a href="#"><img src="img/input.svg" alt="Вход">Вход</a></li>
+            <li><a href="#"><img src="img/basket.svg" alt="Корзина">Пусто</a></li>
         </ul>
     </header>
     <main class="main">
@@ -39,13 +39,14 @@
             <h1>Сливочное мороженое</h1>
             <!--Форма фильтра-->
             <section>
-            <form class="soting" action="https://echo.htmlacademy.ru" method="GET">
+            <form class="sorting" action="https://echo.htmlacademy.ru" method="GET">
+             <div class="sorting-one">   
                 <div class="forom-sorting-all">
                     <p class="form-legend">
                         <label for="sorting">Сортировка:</label>
                     </p>
                     <p>
-                        <select class="form-sorting" name="sorting" id="sorting">
+                        <select class="form-sorting" name="sorting" id="sorting" size="1">
                             <option value="по популярности" selected>по популярности</option>
                             <option value="сначала недорогие">сначала недорогие</option>
                             <option value="сначала дорогие">сначала дорогие</option>
@@ -69,51 +70,54 @@
                         <legend class="form-legend">Жирность:</legend>
                             <ul class="form-radio-list">
                                 <li class="form-radio-list-item">
-                                    <input type="radio" name="zero" id="fat-zero" value="0%">
-                                    <label for="fat-zero">0%</label>
+                                    <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat-zero" value="0%">
+                                    <label class="filter-option-radio filter-option" for="fat-zero">0%</label>
                                 </li>
                                 <li class="form-radio-list-item">
-                                    <input type="radio" name="ten" id="fat-ten" value="до 10%" checked>
-                                    <label for="fat-sugar">до 10%</label>
+                                    <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat-ten" value="до 10%" checked>
+                                    <label class="filter-option-radio" for="fat-sugar">до 10%</label>
                                 </li>
                                 <li class="form-radio-list-item">
-                                    <input type="radio" name="fruits" id="fat-fruits" value="до 30%">
-                                    <label for="fat-fruits">до 30%</label>
+                                    <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat-fruits" value="до 30%">
+                                    <label class="filter-option-radio" for="fat-fruits">до 30%</label>
                                 </li>
                                 <li class="form-radio-list-item">
-                                    <input type="radio" name="syrup" id="fat-syrup" value="выше 30%">
-                                    <label for="fat-syrup">выше 30%</label>
+                                    <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="fat-syrup" value="выше 30%">
+                                    <label class="filter-option-radio" for="fat-syrup">выше 30%</label>
                                 </li>
                             </ul>
                     </fieldset>
-
+                </div>
+                <div class="sorting-two">
                     <fieldset class="form-checkbox">
                         <legend class="form-legend">Наполнители:</legend>
                         <ul class="form-checkbox-list">
-                            <li>
-                                <input type="checkbox" name="chocolate" id="fillers-chocolate" checked>
-                                <label for="fillers-chocolate">шоколадные</label>
+                            <li class="form-checkbox-list-item">
+                                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="chocolate" id="fillers-chocolate" checked>
+                                <label class="filter-option" for="fillers-chocolate">шоколадные</label>
                             </li>
-                            <li>
-                                <input type="checkbox" name="sugar" id="fillers-sugar" checked>
-                                <label for="fillers-sugar">сахарные присыпки</label>
+                            <li class="form-checkbox-list-item">
+                                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="sugar" id="fillers-sugar" checked>
+                                <label class="filter-option" for="fillers-sugar">сахарные присыпки</label>
                             </li>
-                            <li>
-                                <input type="checkbox" name="fruits" id="fillers-fruits">
-                                <label for="fillers-fruits">фрукты</label>
+                            <li class="form-checkbox-list-item">
+                                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="fruits" id="fillers-fruits">
+                                <label class="filter-option" for="fillers-fruits">фрукты</label>
                             </li>
-                            <li>
-                                <input type="checkbox" name="syrup" id="fillers-syrup">
-                                <label for="fillers-syrup">сиропы</label>
+                            <li class="form-checkbox-list-item">
+                                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="syrup" id="fillers-syrup">
+                                <label class="filter-option" for="fillers-syrup">сиропы</label>
                             </li>
-                            <li>
-                                <input type="checkbox" name="jam" id="fillers-jam">
-                                <label for="fillers-jam">джемы</label>
+                            <li class="form-checkbox-list-item">
+                                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="jam" id="fillers-jam">
+                                <label class="filter-option" for="fillers-jam">джемы</label>
                             </li>
                         </ul>
                     </fieldset>
+                    <button class="button-apply" type="submit">Применить</button>
+                    </div>
                 </form>
-            <button class="button-apply" type="submit">Применить</button>
+
             </section>
         <section class="catalog">
             <ul class="catalog-hit">
@@ -181,7 +185,7 @@
         </section>
         <div>
             <ul class="pagination-list">
-                <li class="pagination-item"><a href="#">&lang;</a></li>
+                <li class="pagination-item"><a class="icon-right-small" href="#">&lang;</a></li>
                 <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
                 <li class="pagination-item"><a href="#">2</a></li>
                 <li class="pagination-item"><a href="#">3</a></li>
@@ -263,8 +267,8 @@
         </form>
     </section>
 
-    <section>
-        <!--Форма входа-->
+    <!--section>
+        <!--Форма входа>
         <form action="https://echo.htmlacademy.ru" method="GET">
             <p>
               <label for="login-login" class="visually-hidden">Введите логин</label>
@@ -279,7 +283,7 @@
         <button type="button">Закрыть</button>
         <a href="#">Забыли пароль?</a>
         <a href="#">Новая регистрация</a>
-    </section>
+    </section-->
 
 </body>
 </html>
