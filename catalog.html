@@ -200,7 +200,11 @@
         <section class="footer-icon">
             <ul class="footer-icon-list">
                 <li>
-                    <a href="#"><img src="img/facebook.svg"></a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+                        <path d="M 16 0 C 12.8355 0 9.74207 0.938384 7.11088 2.69649 C 4.4797 4.45459 2.42894 6.95345 1.21793 9.87706 C 0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214 C 0.924806 22.2251 2.44866 25.0761 4.6863 27.3137 C 6.92394 29.5513 9.77487 31.0752 12.8786 31.6926 C 15.9823 32.3099 19.1993 31.9931 22.1229 30.7821 C 25.0466 29.5711 27.5454 27.5203 29.3035 24.8891 C 31.0616 22.2579 32 19.1645 32 16 C 32 11.7565 30.3143 7.68687 27.3137 4.68629 C 24.3131 1.68571 20.2435 0 16 0 Z M 20.06 9.45 H 17 V 12.9 H 20 V 16.34 H 17 V 25 H 14 V 16.34 H 11 V 12.9 H 14 V 9.45 C 13.9449 8.59575 14.2291 7.75426 14.7908 7.1083 C 15.3525 6.46234 16.1464 6.06407 17 6 H 20 V 9.45 H 20.06 Z" />
+                        </svg>
+                    </a>
                 </li>
                 <li>
                     <a href="#"><img src="img/vk.svg"></a>
@@ -235,9 +239,13 @@
         </section>
     </footer>
 
-    <section>
-        <!--Здесь будет форма оформления заказа из корзины-->
-        <button type="submit">Оформить заказ</button>
+    <section class="basket">
+        <!--Форма оформления заказа из корзины-->
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <span class="basket-close"></span>
+
+        </form>
+        <button class="button-order button" type="submit">Оформить заказ</button>
     </section>
 
     <section>
