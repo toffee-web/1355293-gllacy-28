@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="container">
-    <div class="site-wrapper site-wrapper-1">
+    <div class="site-wrapper site-wrapper-1 section-width">
       <div class="slider-container">
         <header class="header-navigation">
           <div class="logo">
             <a href="#"><img src="img/logo.png" alt="Логотип" width="154" height="64"></a>
           </div>
           <ul class="site-navigation">
-            <li><a class="site-navigation-link" href="catalog.html">Каталог</a>
+            <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Каталог</a>
               <ul class="submenu">
-                <li><a href="#">Новинки</a></li>
+                <li><a class="submenu-first" href="#">Новинки</a></li>
                 <li><a href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
@@ -83,7 +83,7 @@
       </section>
       </div>
     </div>
-      <section class="catalog">
+      <section class="catalog section-width">
         <ul class="catalog-hit">
           <li class="catalog-hit-list">
             <p>
@@ -123,8 +123,8 @@
           </li>
         </ul>
       </section>
-      <section class="info">
-        <h3>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h3>
+      <section class="info section-width">
+        <h3>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
         <ul class="info-advantage">
           <li class="info-advantage1">
             <img src="img/icon-ice.svg" alt="Собственное производство" width="49" height="49">
@@ -144,7 +144,7 @@
           </li>
         </ul>
       </section>
-      <div class="article-subscription">
+      <div class="article-subscription section-width">
       <article>
         <h4>Новое в нашем блоге</h4>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -161,7 +161,7 @@
       </section>
     </div>
       <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3032094948753!2d30.321738480694716!3d59.938672815224635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1592342216745!5m2!1sru!2sby" width="100%" height="430" frameborder="0" style="border:0;" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3032094948753!2d30.321738480694716!3d59.938672815224635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1592342216745!5m2!1sru!2sby" width="100%" height="430" frameborder="0" style="border:0;" allowfullscreen="allowfullscreen" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" aria-hidden="false" tabindex="0"></iframe>
         <div>
             <p class="map-text text-info">Адрес главного офиса и оффлайн-магазина:</p> 
             <p class="map-address">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
@@ -172,7 +172,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer section-width">
       <section class="footer-icon">
         <ul class="footer-icon-list">
           <li class="footer-icon-list-item">
@@ -281,6 +281,64 @@
       <a class="restore" href="#">Новая регистрация</a>
     </form>
     </section>
+
+    <section class="basket">
+      <!--Форма оформления заказа из корзины-->
+          <ul>
+              <li>
+                  <button class="basket-close" type="button" aria-label="Удалить товар из корзины"></button>
+              </li>
+              <li>
+                  <img class="basket-img" src="img/ice-small1.png" alt="Мороженое">
+              </li>
+              <li class="basket-name basket-text">
+                  Пломбир с апельсиновым джемом
+                  <input type="hidden" name="name" value="Пломбир с апельсиновым джемом">
+              </li>
+              <li class="basket-text">
+                  1,5 кг
+                  <input id="basket-weight" type="hidden" name="weight" value="Вес">
+              </li>
+              <li class="basket-cost basket-text">
+                  200 руб.
+                  <input id="basket-cost" type="hidden" name="cost" value="Стоимость за килограмм">
+              </li>
+              <li class="basket-text">
+                  300 руб.
+                  <input id="basket-total" type="hidden" name="total" value="Всего за позицию">
+              </li>
+          </ul>
+          <ul>
+              <li>
+                  <button class="basket-close basket-close-last" type="button" aria-label="Удалить товар из корзины"></button>
+              </li>
+              <li>
+                  <img class="basket-img" src="img/ice-small2.png" alt="Мороженое">
+              </li>
+              <li class="basket-name basket-text basket-item basket-item">
+                  Клубничный пломбир с присыпкой из белого шоколада
+                  <input type="hidden" name="name" value="Клубничный пломбир с присыпкой из белого шоколада">
+              </li>
+              <li class="basket-text">
+                  1,5 кг
+                  <input type="hidden" name="weight" value="Вес">
+              </li>
+              <li class="basket-cost basket-text">
+                  300 руб.
+                  <input type="hidden" name="cost" value="Стоимость за килограмм">
+              </li>
+              <li class="basket-text">
+                  450 руб.
+                  <input type="hidden" name="total" value="Всего за позицию">
+              </li>
+          </ul>
+          <p>
+              Итого: 750руб.
+              <input type="hidden" name="grand-total" value="Итого">
+          </p>
+          <button class="button-order button" type="submit">Оформить заказ</button>
+      </form>
+  </section>
 
     <section class="visually-hidden">
       <!-- Здесь будет карта -->
