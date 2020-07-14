@@ -131,11 +131,8 @@ a{
     justify-content: space-between;
     margin: 0;
     margin-bottom: 16px;
-}
-
-.header-navigation-catalog{
-    padding-right: 27px;
-    padding-left: 27px;
+    margin-left: 27px;
+    margin-right: 27px;
 }
 
 .logo{
@@ -266,11 +263,12 @@ a{
     align-items: center;
 }
 
-.user-navigation-input-img{
+/*.user-navigation-input-img{
     display: inline-block;
+    
     width: 20px;
     height: 19px;
-}
+}*/
 
 .user-navigation-input-txt{
     display: inline-block;
@@ -788,7 +786,7 @@ a{
 
 .form-checkbox-list-item label{
     position: relative;
-    display: inline-block;
+    /*display: inline-block;*/
     cursor: pointer;
     user-select: none;
 }
@@ -889,7 +887,6 @@ a{
     min-width: 940px;
     background-repeat: no-repeat;
     background-position: top center;
-    background-position-y: 83px;
     margin-right: 0;
     margin-left: 0;
     padding-left: 27px;
@@ -1302,6 +1299,7 @@ article a{
     text-decoration: underline;
     padding-right: 240px;
     display: inline-block;
+    vertical-align: baseline;
     padding-left: 20px;
 }
 
@@ -1371,6 +1369,8 @@ article a{
 .map iframe{
     position: absolute;
     left: 0;
+    width: 100%;
+    height: 430px;
 }
 
 .text-info{
@@ -1534,9 +1534,9 @@ article a{
     position: relative;
 }
 
-.footer-about-list-item{
+/*.footer-about-list-item{
     display: inline-block;
-}
+}*/
 
 .footer-about-list-item::before{
     content: "";

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
-    <link rel="stylesheet" href="normolize.css">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body  class="container">
-    <header  class="header-navigation header-navigation-catalog">
+    <header  class="header-navigation">
         <div class="logo">
             <a href="index.html"><img src="img/logo.svg" alt="Логотип" width="154" height="64"></a>
         </div>
@@ -81,41 +81,39 @@
                         <path class="basket-goods" d="M5.93506 4.03003L6.97297 13H17.5032L18.6923 4.03003H5.93506Z"/>                
                     </svg>2 товара
                 </a>
-                <ul class="basket">
-                    <form action="https://echo.htmlacademy.ru" method="POST">
-                        <ul>
-                            <li>
-                                <button class="basket-close" type="button" aria-label="Удалить товар из корзины"></button>
-                                <img class="basket-img" src="img/ice-small1.png" alt="Мороженое">
-                                <span class="basket-name basket-text">Пломбир с апельсиновым джемом</span>
-                                <input type="hidden" name="name" value="Пломбир с апельсиновым джемом">
-                                <span class="basket-text">1,5 кг</span>
-                                <input id="basket-weight" type="hidden" name="weight" value="Вес">
-                                <span class="basket-cost basket-text"> 200 руб.</span>
-                                <input id="basket-cost" type="hidden" name="cost" value="Стоимость за килограмм">
-                                <span class="basket-text">300 руб.</span>
-                                <input id="basket-total" type="hidden" name="total" value="Всего за позицию">
-                            </li>
-                            <li>
-                                <button class="basket-close basket-close-last" type="button" aria-label="Удалить товар из корзины"></button>
-                                <img class="basket-img" src="img/ice-small2.png" alt="Мороженое">
-                                <span class="basket-name basket-text basket-item basket-item">Клубничный пломбир с присыпкой из белого шоколада</span>
-                                <input type="hidden" name="name" value="Клубничный пломбир с присыпкой из белого шоколада">
-                                <span class="basket-text">1,5 кг</span>
-                                <input type="hidden" name="weight" value="Вес">
-                                <span class="basket-cost basket-text"> 300 руб.</span>
-                                <input type="hidden" name="cost" value="Стоимость за килограмм">
-                                <span class="basket-text">450 руб.</span>
-                                <input type="hidden" name="total" value="Всего за позицию">
-                            </li>
-                        </ul>
-                        <p>
-                            Итого: 750руб.
-                            <input type="hidden" name="grand-total" value="Итого">
-                        </p>
-                        <button class="button-order button" type="submit">Оформить заказ</button>
-                    </form>
-              </ul>
+                <form class="basket" action="https://echo.htmlacademy.ru" method="POST">
+                    <ul>
+                        <li>
+                            <button class="basket-close" type="button" aria-label="Удалить товар из корзины"></button>
+                            <img class="basket-img" src="img/ice-small1.png" alt="Мороженое" width="33" height="33">
+                            <span class="basket-name basket-text">Пломбир с апельсиновым джемом</span>
+                            <input type="hidden" name="name" value="Пломбир с апельсиновым джемом">
+                            <span class="basket-text">1,5 кг</span>
+                            <input id="basket-weight" type="hidden" name="weight" value="Вес">
+                            <span class="basket-cost basket-text"> 200 руб.</span>
+                            <input id="basket-cost" type="hidden" name="cost" value="Стоимость за килограмм">
+                            <span class="basket-text">300 руб.</span>
+                            <input id="basket-total" type="hidden" name="total" value="Всего за позицию">
+                        </li>
+                        <li>
+                            <button class="basket-close basket-close-last" type="button" aria-label="Удалить товар из корзины"></button>
+                            <img class="basket-img" src="img/ice-small2.png" alt="Мороженое" width="33" height="33">
+                            <span class="basket-name basket-text basket-item basket-item">Клубничный пломбир с присыпкой из белого шоколада</span>
+                            <input type="hidden" name="name" value="Клубничный пломбир с присыпкой из белого шоколада">
+                            <span class="basket-text">1,5 кг</span>
+                            <input type="hidden" name="weight" value="Вес">
+                            <span class="basket-cost basket-text"> 300 руб.</span>
+                            <input type="hidden" name="cost" value="Стоимость за килограмм">
+                            <span class="basket-text">450 руб.</span>
+                            <input type="hidden" name="total" value="Всего за позицию">
+                        </li>
+                    </ul>
+                    <p>
+                        Итого: 750руб.
+                        <input type="hidden" name="grand-total" value="Итого">
+                    </p>
+                    <button class="button-order button" type="submit">Оформить заказ</button>
+                </form>
             </li>
         </ul>
     </header>
@@ -322,7 +320,8 @@
                         <a href="#">&rang;</a
                     ></li>
                 </ul>
-            </div>        
+            </div>
+        </section>       
     </main>
     <footer class="footer footer-line">
         <section class="footer-icon">
@@ -382,7 +381,7 @@
         </section>
         <section class="developer">
             <a class="developer-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-acad.svg" alt="Html Academy" width="108" height="39"></a>  
-            <p>Сделано в <a class="developer-academy links-hover-click" href="https://htmlacademy.ru/intensive/htmlcss" class="links-hover-click">HTML Academy</a> &copy; 2019</p>
+            <p>Сделано в <a class="developer-academy links-hover-click" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</p>
         </section>
     </footer>
 </body>
