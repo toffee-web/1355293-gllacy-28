@@ -130,7 +130,7 @@ a{
     display: flex;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     margin-left: 27px;
     margin-right: 27px;
 }
@@ -145,6 +145,7 @@ a{
     line-height: 18px;
     display: flex;
     flex-direction: row;
+    margin-bottom: 5px;
 }
 
 .main-navigation ul{
@@ -248,13 +249,13 @@ a{
 }
 
 .on-page{
-    background-color: #D07058;
+    background-color: var(--basic-darkred);
     border-radius: 26px;
     padding-right: 0px;
 }
 
 .on-page-submenu{
-    background-color: #D07058;
+    background-color: var(--basic-darkred);
 }
 
 .user-navigation{
@@ -262,13 +263,6 @@ a{
     display: flex;
     align-items: center;
 }
-
-/*.user-navigation-input-img{
-    display: inline-block;
-    
-    width: 20px;
-    height: 19px;
-}*/
 
 .user-navigation-input-txt{
     display: inline-block;
@@ -300,7 +294,7 @@ a{
     display: block;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-right: 9px;
+    padding-right: 14px;
     padding-left: 9px;
     font-weight: bold;
     line-height: 18px;
@@ -517,11 +511,11 @@ a{
     line-height: 41px;
     margin-left: 27px;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
 }
 
 .filter{
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .form-legend{
@@ -547,7 +541,7 @@ a{
 }
 
 .sorting-one{
-    margin-bottom: 14px;;
+    margin-bottom: 12px;;
 }
 
 .forom-sorting-all p{
@@ -575,7 +569,7 @@ a{
     appearance: none;
     -moz-appearance: none;
     outline: 0;
-    background-image: url(../img/white-select.svg);
+    background-image: url("../img/white-select.svg");
     background-position: 170px center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -583,7 +577,7 @@ a{
 
 .form-sorting:hover{
     color: var(--basic-black);
-    background-image: url(../img/black-select.svg);
+    background-image: url("../img/black-select.svg");
     background-position: 170px center;
     background-repeat: no-repeat;
 }
@@ -620,6 +614,7 @@ a{
     height: 2px;
     background: var(--basic-lightgrey);
 }
+
 .range-controls .scale{
     height: 2px;
     background: rgba(248, 247, 244, 0.5);
@@ -627,7 +622,7 @@ a{
 
 .range-controls .toggle{
     position: absolute;
-    top: 10px;
+    top: 7px;
     left: 0;  
     width: 4px;
     height: 4px;
@@ -735,7 +730,7 @@ a{
 }
 
 .filter-option-radio{
-    padding-left: 30px;
+    padding-left: 31px;
 }
 
 .form-checkbox{
@@ -758,6 +753,7 @@ a{
     flex-wrap: wrap;
     position: relative;
     padding-left: 16px;
+    margin-top: 2px;
 }
 
 .form-checkbox-list-item svg{
@@ -767,26 +763,25 @@ a{
 }
 
 .form-checkbox-list-item:nth-child(2){
-    margin-right: 22px;
+    margin-right: 28px;
 }
 
 .form-checkbox-list-item:nth-child(3){
-    margin-right: 24px;
+    margin-right: 30px;
 }
 
 .form-checkbox-list-item:first-of-type{
-    margin-right: 20px;
-    margin-left: 16px;
+    margin-right: 25px;
+    margin-left: 20px;
 }
 
 .form-checkbox-list-item:last-of-type{
-   margin-left: 21px;
-   margin-right: 19px;
+    margin-left: 21px;
+    margin-right: 7px;
 }
 
 .form-checkbox-list-item label{
     position: relative;
-    /*display: inline-block;*/
     cursor: pointer;
     user-select: none;
 }
@@ -802,6 +797,7 @@ a{
     cursor: pointer;
     user-select: none;
 }
+
 .filter-input-checkbox{
     position: absolute;
     z-index: -1;
@@ -858,11 +854,11 @@ a{
     line-height: 18px;
     color: var(--basic-white);
     border-radius: 20px;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--basic-white);
     background-color: var(--basic-transparent);
     height: 36px;
     width: 144px;
-    margin-top: 26px;
+    margin-top: 25px;
     cursor: pointer;
 }
 
@@ -879,7 +875,7 @@ a{
 
 /*Слайдер*/
 .slider-container{
-    margin-bottom: 35px;
+    margin-bottom: 39px;
     padding-right: 27px;
 }
 
@@ -924,7 +920,7 @@ a{
 .slide-title{
     width: 700px;
     margin: 0 auto;
-    margin-bottom: 27px;
+    margin-bottom: 23px;
     font-size: 60px;
     line-height: 60px;
     font-weight: bold;
@@ -932,7 +928,7 @@ a{
 
 .button-slide{
     display: inline-block;
-    padding: 12px 44px;
+    padding: 12px 40px;
     font-weight: 600;
     font-size: 31px;
     line-height: 41px;
@@ -949,7 +945,7 @@ a{
 
 .slide-controls{
     position: absolute;
-    bottom: 30px;
+    bottom: 25px;
     left: 0;
     z-index: 20;
     display: flex;
@@ -969,13 +965,13 @@ a{
 
 .slide-controls button[type=button]:hover{
     background-color: rgba(255, 255, 255, 0.4);
-    border: 2px solid #FFFFFF;
+    border: 2px solid var(--basic-white);
     box-sizing: border-box;
 }
 
 .slide-controls button[type=button]:active{
     background-color: var(--basic-white);
-    border: 2px solid #FFFFFF;
+    border: 2px solid var(--basic-white);
     box-sizing: border-box;
 }
 
@@ -988,7 +984,7 @@ a{
     position: relative;
     padding-top: 305px;
     text-align: center;
-    color: #ffffff;
+    color: var(--basic-white);
 }
 
 .main-slaider-information{
@@ -1079,10 +1075,10 @@ a{
 }
 
 .stock-left a{
-    padding-top: 15px;
-    padding-bottom: 16px;
+    padding-top: 11px;
+    padding-bottom: 13px;
     padding-left: 22px;
-    padding-right: 22px;
+    padding-right: 18px;
     position: absolute;
     right: 20px;
     top: 160px;
@@ -1092,8 +1088,8 @@ a{
 }
 
 .stock-right a{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 13px;
+    padding-bottom: 11px;
     padding-left: 23px;
     padding-right: 18px;   
 }
@@ -1132,7 +1128,7 @@ a{
 
 .catalog-hit{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 0;
     list-style: none;
@@ -1143,10 +1139,10 @@ a{
     margin: 0;
 }
 
-.catalog-hit-list{
-    position: relative;
-    margin-bottom: 40px;
+.catalog-hit .catalog-hit-list{
+    margin-bottom: 32px;
 }
+
 .catalog-hit-item{
     padding-top: 6px;
 }
@@ -1171,14 +1167,14 @@ a{
 .catalog-hit-img{
     position: absolute;
     z-index: 1;
-    top: 10px;
+    top: 6px;
 }
 
 .catalog-hit li{
-   max-width: 267px;
-   position: relative;
-   top: 10px;
-   left: -5px;
+    max-width: 267px;
+    position: relative;
+    top: 9px;
+    margin-bottom: 55px;
 }
 
 .button-view{
@@ -1199,7 +1195,7 @@ a{
     font-size: 45px;
     line-height: 45px;
     position: absolute;
-    top: 220px;
+    top: 215px;
 }
 
 .price span{
@@ -1208,7 +1204,7 @@ a{
 }
 
 .price span::before{
-    content: '\20BD';
+    content: "\20BD";
     font-size: 45px;
 }
 
@@ -1218,18 +1214,19 @@ a{
     text-align: center;
     text-decoration: underline;
     text-decoration-color: var(--basic-transparent);
-    padding-top: 10px;
+    padding-top: 7px;
 }
 
 .info{
     color: var(--basic-black);
     background-image: url("../img/pattern.jpg");
+    background-color: #eee2c9;
     border-radius: 16px;
     width: 1146px;
     margin-left: 27px;
     margin-right: 27px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 }
 
 .info h3{
@@ -1252,12 +1249,18 @@ a{
     padding: 0;
     padding-right: 23px;
     padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .info-advantage img{
     width: 49px;
     height: 49px;
-    padding-right: 6px;
+    margin-right: 6px;
+}
+
+.info-advantage p{
+    margin-top: 10px;
+    margin-bottom: 11px;
 }
 
 .info-advantage1,
@@ -1279,6 +1282,8 @@ a{
 
 article{
     background-image: url("../img/strawberry.png");
+    background-color: var(--basic-white);
+    border-radius: 16px;
     background-repeat: no-repeat;
     color: var(--basic-black);
     min-height: 220px;
@@ -1287,7 +1292,7 @@ article{
 
 article h4{
     margin: 0;
-    padding-top: 23px;
+    padding-top: 20px;
     padding-left: 20px;
 }
 
@@ -1320,7 +1325,7 @@ article a{
 
 .col-subscription-text{
     padding-top: 29px;
-    padding-left: 20px;
+    padding-left: 25px;
     padding-right: 16px;
     padding-bottom: 40px;
 }
@@ -1435,6 +1440,10 @@ article a{
     margin-bottom: 30px;
 }
 
+.pagination{
+    margin-top: 53px;
+}
+
 .pagination-item a{
     display: block;
     padding: 3px 9px;
@@ -1449,7 +1458,7 @@ article a{
 }
 
 .pagination-item{
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 .pagination-item a:hover{
@@ -1459,18 +1468,18 @@ article a{
 
 .pagination-item a:focus,
 .pagination-item a:active{
-  background-color: var(--basic-white);
-  border-radius: 50%;
-  color: var(--basic-black);
+    background-color: var(--basic-white);
+    border-radius: 50%;
+    color: var(--basic-black);
 }
 
 .pagination-item-current a,
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  border-radius: 50px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    border-radius: 50px;
 }
 
 .footer{
@@ -1495,7 +1504,7 @@ article a{
     justify-content: space-between;
     width: 164px;
     margin: inherit;
-    padding-top: 29px;
+    padding-top: 35px;
     padding-bottom: 20px;
     padding-left: 0px;
 }
@@ -1530,19 +1539,19 @@ article a{
     padding: inherit;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
+    column-gap: 35px;
     position: relative;
+    top: 5px;
+    left: 16px;
+    margin-top: 30px;
 }
 
-/*.footer-about-list-item{
-    display: inline-block;
-}*/
-
 .footer-about-list-item::before{
-    content: "";
+    content: " ";
     width: 15px;
     height: 13px;
-    background-image: url(../img/heart.svg);
+    background-image: url("../img/heart.svg");
     position: absolute;
     left: -19px;
     top: 2px;
@@ -1581,7 +1590,7 @@ article a{
 }
 
 .developer{
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -1592,7 +1601,6 @@ article a{
 }
 
 /*Login form*/
-
 .login-form input[type="email"],
 .login-form input[type="password"]{
     font-size: 14px;
@@ -1621,7 +1629,6 @@ article a{
 }
 
 /*Формы*/
-
 .modal{
     position: absolute;
     top: 0;
@@ -1838,7 +1845,8 @@ article a{
 
 .form-feedback textarea{
     color: var(--basic-darkgrey);
-    width: 428px;
+    max-width: 428px;
+    max-height: 154px;
     padding-left: 14px;
     padding-top: 16px;
     font-size: 16px;
@@ -1916,7 +1924,7 @@ article a{
     top: 0;
     left: 5px;
     left: 5px;
-    content: ' ';
+    content: " ";
     height: 11px;
     width: 2px;
     background-color: var(--basic-black);
@@ -1957,7 +1965,6 @@ article a{
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
-
 }
 
 .basket-cost{
